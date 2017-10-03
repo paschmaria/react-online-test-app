@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
 import ChartistGraph from 'react-chartist';
 
 class TestChart extends Component {

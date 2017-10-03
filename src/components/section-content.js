@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 import TestChart from './TestChart';
 import AnswerForm from './AnswerForm';
@@ -10,10 +10,10 @@ class SectionContent extends Component {
 		return(
 			<section className="card">
 				<Row>
-					<Col md={4} mdPush={8}>
+					<Col md={5} mdPush={7}>
 						<TestChart />
 					</Col>
-					<Col md={8} mdPull={4}>
+					<Col md={7} mdPull={5}>
 						<div className="test clearfix">
 							<div className="test__number"></div>
 							<div className="test__content">

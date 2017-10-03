@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Grid } from 'react-bootstrap';
 
 class SectionHeader extends Component {
 
@@ -12,16 +11,20 @@ class SectionHeader extends Component {
 	}
 
 	componentDidMount() {
-		let totalTime = 60;
+		let totalTime = 300;
 
 		let countDown = () => {
 			totalTime--;
 			let minute = Math.floor(totalTime/60);
 			let secs = Math.floor(totalTime%60);
 
-			if (totalTime <= 0) {
+			if (totalTime > 0) {
+				minute = `0${minute}`;
+			} else if (totalTime <= 0) {
 				minute = secs = `0${0}`;
-			} else if (secs < 10) {
+			}
+
+			if (secs < 10 && secs > 0) {
 				secs = `0${secs}`;
 			}
 

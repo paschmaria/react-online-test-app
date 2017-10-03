@@ -13,13 +13,54 @@ html,body {
 }
 
 html {
-  font-family: "Circular Black","Helvetica Neue",Helvetica,Arial,sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
 body {
-  background: #DDD !important;
+  font-family: "Circular Std",Helvetica,Arial,sans-serif !important;
+  background-color: #FAFAFA !important;
+  color: #1B2733 !important;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./fonts/circular-black-italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./fonts/circular-black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./fonts/circular-bold-italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./fonts/circular-bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./fonts/circular-book-italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./fonts/circular-book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./fonts/circular-medium-italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./fonts/circular-medium.otf") format("opentype");
 }
 
 .navbar-default {
@@ -32,12 +73,18 @@ body {
 .navbar-brand {
   height: auto !important;
   border-right: 1px solid #FFF;
+  padding: 1em 2em !important;
+}
+
+.navbar-brand > img {
+  max-height: 24px;
 }
 
 .navbar-default .navbar-text {
   color: #FFF !important;
   text-shadow: none !important;
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 24px;
   margin: 18px 15px;
 }
 
@@ -47,7 +94,7 @@ body {
 }
 
 .header {
-  width: 85%;
+  width: 87.5%;
   margin: auto;
   display: -webkit-flex;
   display: -moz-flex;
@@ -60,7 +107,15 @@ body {
 }
 
 .header .header__text:first-child {
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 40px;
+}
+
+.header .header__text:last-child {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #47525D;
 }
 
 .header__text_bold {
@@ -68,16 +123,16 @@ body {
 }
 
 .card {
-  border: 2px solid #999;
+  border: 2px solid #E6E8EB;
   border-radius: 2px;
   padding: 5%;
   background: #FFF;
-  width: 85%;
+  width: 87.5%;
   margin: auto;
 }
 
 .ct-grid {
-  /*stroke: #888;*/
+  /*stroke: #1B2733;*/
   stroke-width: 2px;
   stroke-dasharray: 0;
 }
@@ -88,8 +143,8 @@ body {
 }
 
 .ct-label {
-  fill: #888;
-  color: #888;
+  fill: #1B2733;
+  color: #1B2733;
   font-size: 0.9rem;
 }
 
@@ -97,11 +152,12 @@ body {
   float: left;
   width: 10%;
   font-size: 17px;
-  color: rgb(94, 195, 150);
+  color: #36B37E;
+  line-height: 22px;
 }
 
 .test .test__number::before {
-  content: '2 \2192'
+  content: '2 \2192';
 }
 
 .test .test__content {
@@ -114,11 +170,13 @@ body {
 }
 
 .test__text {
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 29px;
+  color: #47525D;
 }
 
 .test__text_light {
-  color: #888;
+  color: #E6E8EB;
 }
 
 .test__answer {
@@ -140,10 +198,10 @@ body {
 
 .form-label__content-wrapper {
   width: 100%;
-  border: 5px solid #DDD;
+  border: 4px solid #E6E8EB;;
   position: relative;
   clear: left;
-  background: #f9f9f9;
+  background-color: #FAFAFA;
   transition: all 0.5s ease-in-out;
 }
 
@@ -153,34 +211,37 @@ body {
   right: 0;
   height: 25px;
   width: 25px;
-  background: #DDD;
+  background: #E6E8EB;
   transition: all 0.5s ease-in-out;
 }
 
 .form-label__content-wrapper div:last-child::before {
   content: '';
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 100%;
-  border: 1px solid #FFF;
+  border: 2px solid #FFF;
   position: absolute;
-  top: 2%;
-  left: 16%;
+  top: 10%;
+  left: 21%;
 }
 
 .form-label__key {
   float: left;
-  padding: 2px 5px;
-  border: 1px solid #DDD;
-  border-radius: 3px;
-  margin: 12px;
+  padding: 1px 5px 0 5px;
+  border: 1px solid #E6E8EB;
+  border-radius: 2px;
+  margin: 13px;
   background: #FFF;
+  line-height: 20px;
 }
 
 .form-label__value {
   margin: 10px;
   font-size: 22px;
+  font-weight: 300;
+  line-height: 28px;
 }
 
 .form-label__button {
@@ -190,46 +251,53 @@ body {
   box-shadow: none !important;
   padding: 16px !important;
   text-shadow: none !important;
-  border-radius: 5px !important;
+  border-radius: 4px !important;
 }
 
 .form-label_selected .form-label__input:checked ~ .form-label__content-wrapper {
-  border-color: rgb(94, 195, 150);
+  border-color: #36B37E;
 }
 
 .form-label_selected .form-label__input:checked ~ .form-label__content-wrapper div:last-child {
-  background: rgb(94, 195, 150);
+  background: #36B37E;
 }
 
 .button {
-  background: #DDD !important;
-  color: #888 !important;
+  background-color: #F0F0F0 !important;
+  color: #7B8994 !important;
 }
 
 .brand-bg {
-  background: #4285f4 !important;
+  background-color: #0064E6 !important;
   color: #FFF !important;
 }
 
 .brand-bg-lite {
-  background: rgba(66, 133, 244, 0.75) !important;
+  background-color: #0064E6 !important;
   color: #FFF !important;
 }
 
 @media only screen and (max-width: 765px) {
     .navbar-default .navbar-text {
       display: inline-block;
+      font-size: 16px;
     }
 }
 
-@media only screen and (max-width: 394px) {
+@media only screen and (max-width: 425px) {
     .navbar-default .navbar-text {
       font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 348px) {
+@media only screen and (max-width: 380px) {
     .navbar-default .navbar-text {
-      font-size: 12px;
+      font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .navbar-default .navbar-text {
+      font-size: 8px;
     }
 }
