@@ -85,17 +85,17 @@ body {
   text-shadow: none !important;
   font-size: 19px;
   line-height: 24px;
-  margin: 18px 15px;
+  margin: 18px 32px;
 }
 
 .main {
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 42px;
+  margin-bottom: 96px;
 }
 
 .header {
   width: 87.5%;
-  margin: auto;
+  margin: 3px auto;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -125,7 +125,7 @@ body {
 .card {
   border: 2px solid #E6E8EB;
   border-radius: 2px;
-  padding: 5%;
+  padding: 4.2%;
   background: #FFF;
   width: 87.5%;
   margin: auto;
@@ -148,6 +148,16 @@ body {
   font-size: 0.9rem;
 }
 
+.img-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .test .test__number {
   float: left;
   width: 10%;
@@ -166,17 +176,18 @@ body {
 }
 
 .test__number,.test__text {
-  margin: 10px 0 50px 0;
+  margin: 10px 0 48px 0;
 }
 
 .test__text {
   font-size: 19px;
   line-height: 29px;
   color: #47525D;
+  font-weight: 300;
 }
 
 .test__text_light {
-  color: #E6E8EB;
+  color: rgba(71, 82, 93, 0.6);
 }
 
 .test__answer {
@@ -188,6 +199,10 @@ body {
   text-align: center;
   margin-bottom: 15px;
   cursor: pointer;
+}
+
+.form-label:last-child {
+  margin-bottom: 0;
 }
 
 .form-label__input {
@@ -209,8 +224,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  height: 25px;
-  width: 25px;
+  height: 28px;
+  width: 28px;
   background: #E6E8EB;
   transition: all 0.5s ease-in-out;
 }
@@ -223,8 +238,8 @@ body {
   border-radius: 100%;
   border: 2px solid #FFF;
   position: absolute;
-  top: 10%;
-  left: 21%;
+  top: 13%;
+  left: 24%;
 }
 
 .form-label__key {
@@ -232,13 +247,13 @@ body {
   padding: 1px 5px 0 5px;
   border: 1px solid #E6E8EB;
   border-radius: 2px;
-  margin: 13px;
+  margin: 14.5px;
   background: #FFF;
   line-height: 20px;
 }
 
 .form-label__value {
-  margin: 10px;
+  margin: 12px 10px;
   font-size: 22px;
   font-weight: 300;
   line-height: 28px;
@@ -249,7 +264,7 @@ body {
   width: 100%;
   background-image: none !important;
   box-shadow: none !important;
-  padding: 16px !important;
+  padding: 16.5px !important;
   text-shadow: none !important;
   border-radius: 4px !important;
 }

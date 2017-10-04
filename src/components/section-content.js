@@ -3,6 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 
 import TestChart from './TestChart';
 import AnswerForm from './AnswerForm';
+import chart from '../images/media.jpg';
 
 class SectionContent extends Component {
 
@@ -11,7 +12,9 @@ class SectionContent extends Component {
 			<section className="card">
 				<Row>
 					<Col md={5} mdPush={7}>
-						<TestChart />
+						<div className="img-wrapper">
+							<img src={chart} alt="[Chart]" className="img-responsive" />
+						</div>
 					</Col>
 					<Col md={7} mdPull={5}>
 						<div className="test clearfix">

@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://paschmaria.github.io/react-online-test-app/",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "bootstrap": "^3.3.7",
     "chartist": "^0.11.0",
     "gh-pages": "^1.0.0",

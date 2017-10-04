@@ -40,10 +40,10 @@ class AnswerForm extends Component {
 				</label>
 				<Row>
 					<Col xs={12} md={6} className="text-left">
-						<Button bsSize="large" className="form-label__button button"><span className="pull-left">&#60;</span> Previous</Button>
+						<Button bsSize="large" className="form-label__button button"><span className="pull-left"><i className="fa fa-angle-left"></i></span> Previous</Button>
 					</Col>
 					<Col xs={12} md={6} className="text-right">
-						<Button bsSize="large" type="submit" className="form-label__button brand-bg">Next Question <span className="pull-right">&#62;</span></Button>
+						<Button bsSize="large" type="submit" className="form-label__button brand-bg">Next Question <span className="pull-right"><i className="fa fa-angle-right"></i></span></Button>
 					</Col>
 				</Row>
 			</form>
